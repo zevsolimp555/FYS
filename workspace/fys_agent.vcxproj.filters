@@ -16,12 +16,18 @@
     <Filter Include="Header Files\Common">
       <UniqueIdentifier>{168bd919-8f9b-413f-a572-326c2784bdbe}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{922af120-1417-4923-a76e-9ca42c57cb89}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\fys_agent\stdafx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\fys_common\common_types.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fys_common\agent_machine.h">
       <Filter>Header Files\Common</Filter>
     </ClInclude>
   </ItemGroup>
@@ -31,6 +37,9 @@
     </ClCompile>
     <ClCompile Include="..\fys_agent\stdafx.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fys_common\agent_machine.cpp">
+      <Filter>Source Files\Common</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
