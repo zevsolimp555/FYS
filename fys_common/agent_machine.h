@@ -18,6 +18,9 @@ public:
     agent_machine& operator= (const agent_machine& am);
     agent_machine& operator= (agent_machine&& am);
 
+    bool operator== (const agent_machine& am) const;
+    bool operator!= (const agent_machine& am) const;
+
 protected:
     account_information acc_info_;
 };

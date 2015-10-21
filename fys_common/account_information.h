@@ -19,6 +19,9 @@ public:
     account_information& operator= (const account_information& ai);
     account_information& operator= (account_information&& ai);
 
+    bool operator== (const account_information& ai) const;
+    bool operator!= (const account_information& ai) const;
+
 protected:
     std::wstring login_;
     std::wstring password_;

@@ -69,3 +69,17 @@ void account_information::set_password(const std::wstring& password)
 {
     password_ = password;
 }
+
+bool account_information::operator== (const account_information& ai) const
+{
+    bool equal = true;
+    // TODO(zhord): compare no case.
+    equal &= (login_.compare(ai.login_) == 0);
+
+    return equal;
+}
+
+bool account_information::operator!= (const account_information& ai) const
+{
+    return !(*this == ai);
+}

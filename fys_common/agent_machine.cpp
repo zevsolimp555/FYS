@@ -54,3 +54,16 @@ void agent_machine::set_account_information(const account_information& acc_info)
 {
     acc_info_ = acc_info;
 }
+
+bool agent_machine::operator== (const agent_machine& am) const
+{
+    bool equal = true;
+    equal &= (acc_info_ == am.acc_info_);
+
+    return equal;
+}
+
+bool agent_machine::operator!= (const agent_machine& am) const
+{
+    return !(*this == am);
+}
