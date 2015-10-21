@@ -30,6 +30,9 @@
     <ClInclude Include="..\fys_common\agent_machine.h">
       <Filter>Header Files\Common</Filter>
     </ClInclude>
+    <ClInclude Include="..\fys_common\account_information.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\fys_agent\fys_agent.cpp">
@@ -39,6 +42,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\fys_common\agent_machine.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fys_common\account_information.cpp">
       <Filter>Source Files\Common</Filter>
     </ClCompile>
   </ItemGroup>

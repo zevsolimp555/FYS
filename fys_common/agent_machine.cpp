@@ -6,21 +6,18 @@ agent_machine::agent_machine()
 {
 }
 
-agent_machine::agent_machine(const std::wstring& login, const std::wstring& password)
-    : login_(login)
-    , password_(password)
+agent_machine::agent_machine(const account_information& acc_info)
+    : acc_info_(acc_info)
 {
 }
 
 agent_machine::agent_machine(const agent_machine& am)
-    : login_(am.login_)
-    , password_(am.password_)
+    : acc_info_(am.acc_info_)
 {
 }
 
 agent_machine::agent_machine(agent_machine&& am)
-    : login_(std::move(am.login_))
-    , password_(std::move(am.password_))
+    : acc_info_(std::move(am.acc_info_))
 {
 }
 
@@ -32,8 +29,7 @@ agent_machine& agent_machine::operator= (const agent_machine& am)
 {
     if (this != &am)
     {
-        login_ = am.login_;
-        password_ = am.password_;
+        acc_info_ = am.acc_info_;
     }
 
     return *this;
@@ -43,30 +39,18 @@ agent_machine& agent_machine::operator= (agent_machine&& am)
 {
     if (this != &am)
     {
-        login_ = std::move(am.login_);
-        password_ = std::move(am.password_);
+        acc_info_ = std::move(am.acc_info_);
     }
 
     return *this;
 }
 
-std::wstring agent_machine::get_login() const
+const account_information& agent_machine::get_account_information() const
 {
-    return login_;
+    return acc_info_;
 }
 
-std::wstring agent_machine::get_password() const
+void agent_machine::set_account_information(const account_information& acc_info)
 {
-    return password_;
-}
-
-
-void agent_machine::set_login(const std::wstring& login)
-{
-    login_.assign(login);
-}
-
-void agent_machine::set_password(const std::wstring& password)
-{
-    password_.assign(password);
+    acc_info_ = acc_info;
 }
