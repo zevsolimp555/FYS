@@ -1,7 +1,10 @@
 #pragma once
 
 #ifdef _WIN32
-    
+
+    // use std::min and std::max
+    #define NOMINMAX
+
     #include <WinSock2.h>
     #include <Windows.h>
 
@@ -14,8 +17,12 @@
 #endif
 
 #include <string>
-#include <vector>
+#include <deque>
+#include <queue>
+#include <map>
+#include <set>
 #include <algorithm>
 #include <iostream>
+#include <cassert>
 
 #include "common_types.h"

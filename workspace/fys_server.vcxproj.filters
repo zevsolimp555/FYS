@@ -36,7 +36,7 @@
     <ClInclude Include="..\fys_common\agent_machine.h">
       <Filter>Header Files\Common</Filter>
     </ClInclude>
-    <ClInclude Include="..\fys_common\base_socket.h">
+    <ClInclude Include="..\fys_common\basic_socket.h">
       <Filter>Header Files\Common</Filter>
     </ClInclude>
   </ItemGroup>
@@ -56,7 +56,7 @@
     <ClCompile Include="..\fys_common\agent_machine.cpp">
       <Filter>Source Files\Common</Filter>
     </ClCompile>
-    <ClCompile Include="..\fys_common\base_socket.cpp">
+    <ClCompile Include="..\fys_common\basic_socket.cpp">
       <Filter>Source Files\Common</Filter>
     </ClCompile>
   </ItemGroup>

@@ -157,7 +157,7 @@
   <ItemGroup>
     <ClInclude Include="..\fys_common\account_information.h" />
     <ClInclude Include="..\fys_common\agent_machine.h" />
-    <ClInclude Include="..\fys_common\base_socket.h" />
+    <ClInclude Include="..\fys_common\basic_socket.h" />
     <ClInclude Include="..\fys_common\common_types.h" />
     <ClInclude Include="..\fys_server\agent_machine_manager.h" />
     <ClInclude Include="..\fys_server\stdafx.h" />
@@ -165,7 +165,7 @@
   <ItemGroup>
     <ClCompile Include="..\fys_common\account_information.cpp" />
     <ClCompile Include="..\fys_common\agent_machine.cpp" />
-    <ClCompile Include="..\fys_common\base_socket.cpp" />
+    <ClCompile Include="..\fys_common\basic_socket.cpp" />
     <ClCompile Include="..\fys_server\agent_machine_manager.cpp" />
     <ClCompile Include="..\fys_server\fys_server.cpp" />
     <ClCompile Include="..\fys_server\stdafx.cpp">

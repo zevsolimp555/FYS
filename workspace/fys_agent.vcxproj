@@ -158,8 +158,8 @@
     <ClInclude Include="..\fys_agent\stdafx.h" />
     <ClInclude Include="..\fys_common\account_information.h" />
     <ClInclude Include="..\fys_common\agent_machine.h" />
+    <ClInclude Include="..\fys_common\basic_socket.h" />
     <ClInclude Include="..\fys_common\common_types.h" />
-    <ClInclude Include="..\fys_common\base_socket.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\fys_agent\fys_agent.cpp" />
@@ -171,7 +171,7 @@
     </ClCompile>
     <ClCompile Include="..\fys_common\account_information.cpp" />
     <ClCompile Include="..\fys_common\agent_machine.cpp" />
-    <ClCompile Include="..\fys_common\base_socket.cpp" />
+    <ClCompile Include="..\fys_common\basic_socket.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
